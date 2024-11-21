@@ -1,6 +1,11 @@
 {
+	"name": "super-duper-octo",
+	"type": "module",
+	"version": "0.0.1",
 	"private": true,
 	"packageManager": "pnpm@9.14.2",
+	"author": "Dyrean",
+	"license": "MIT",
 	"scripts": {
 		"dev": "NODE_OPTIONS='--no-warnings' nuxi dev",
 		"build": "nuxi build",
@@ -40,9 +45,9 @@
 		"wrangler": "^3.89.0"
 	},
 	"simple-git-hooks": {
-    	"pre-commit": "pnpm lint-staged"
-  	},
-  	"lint-staged": {
-	    "*": "eslint --fix"
-  	}
+		"pre-commit": "pnpm lint-staged"
+	},
+	"lint-staged": {
+		"*": "eslint --fix"
+	}
 }
